@@ -1,3 +1,11 @@
+local jsFmt = function(bufnr)
+  if require('conform').get_formatter_info('eslint_d', bufnr).available then
+    return { 'prettierd', 'eslint_d' }
+  else
+    return { 'prettier', 'eslint' }
+  end
+end
+
 return {
   'stevearc/conform.nvim',
   lazy = false,
@@ -25,10 +33,18 @@ return {
     end,
     formatters_by_ft = {
       lua = { 'stylua' },
-      javascript = { 'prettierd', 'prettier', 'eslint_d', 'eslint' },
-      javascriptreact = { 'prettierd', 'prettier', 'eslint_d', 'eslint' },
-      typescript = { 'prettierd', 'prettier', 'eslint_d', 'eslint' },
-      typescriptreact = { 'prettierd', 'prettier', 'eslint_d', 'eslint' },
+      javascript = function(bufnr)
+        return jsFmt(bufnr)
+      end,
+      javascriptreact = function(bufnr)
+        return jsFmt(bufnr)
+      end,
+      typescript = function(bufnr)
+        return jsFmt(bufnr)
+      end,
+      typescriptreact = function(bufnr)
+        return jsFmt(bufnr)
+      end,
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
       --
