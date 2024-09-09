@@ -42,7 +42,7 @@ require('lazy').setup({
   require 'lsp',
   require 'lsp.plugins.autocomplete',
   require 'lsp.plugins.autoformat',
-  -- require 'plugins.mini',
+  require 'plugins.mini',
   require 'plugins.treesitter',
   require 'plugins.lint',
   require 'plugins.gitsigns',

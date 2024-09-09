@@ -101,7 +101,7 @@ return {
     local servers = {
       clangd = {},
       gopls = {},
-      tsserver = {},
+      ts_ls = {},
       eslint = {
         settings = {
           codeActionOnSave = {
@@ -111,9 +111,6 @@ return {
       },
       prettier = {
         filetypes = { 'css', 'javascript', 'javascriptreact', 'typescript', 'typescriptreact', 'json', 'html', 'markdown', 'yaml', 'graphql' },
-      },
-      htmx = {
-        filetypes = { 'html', 'templ' },
       },
       templ = {},
       html = {
