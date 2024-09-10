@@ -7,9 +7,6 @@ vim.g.have_nerd_font = true
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
-vim.opt.spell = true
-vim.opt.spelllang = en
-
 -- vim.opt.clipboard = 'unnamedplus'
 
 vim.opt.tabstop = 2
