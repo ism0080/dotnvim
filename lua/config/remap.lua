@@ -8,12 +8,14 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz')
 vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
 
+-- Paste over a word, but keep the copied word. Send the deleted word to void
 vim.keymap.set('x', '<leader>p', '"_dP')
 
 vim.keymap.set('n', '<leader>y', '"+y')
 vim.keymap.set('v', '<leader>y', '"+y')
 vim.keymap.set('n', '<leader>Y', '"+Y')
 
+-- Delete without saving to clipboard
 vim.keymap.set('n', '<leader>d', '"_dP')
 vim.keymap.set('v', '<leader>d', '"_dP')
 
