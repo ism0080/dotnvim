@@ -45,6 +45,8 @@ return {
       typescriptreact = function(bufnr)
         return jsFmt(bufnr)
       end,
+      ['*'] = { 'codespell' },
+      ['_'] = { 'trim_whitespace' },
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
       --
