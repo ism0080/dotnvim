@@ -1,9 +1,9 @@
 local jsFmt = function(bufnr)
-  if require('conform').get_formatter_info('eslint_d', bufnr).available then
-    return { 'prettierd', 'eslint_d' }
-  else
-    return { 'prettier', 'eslint' }
-  end
+  -- if require('conform').get_formatter_info('eslint_d', bufnr).available then
+  -- return { 'prettierd', 'eslint_d' }
+  -- else
+  return { 'prettier', 'eslint' }
+  -- end
 end
 
 return {
@@ -45,8 +45,6 @@ return {
       typescriptreact = function(bufnr)
         return jsFmt(bufnr)
       end,
-      ['*'] = { 'codespell' },
-      ['_'] = { 'trim_whitespace' },
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
       --
