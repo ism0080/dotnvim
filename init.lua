@@ -52,6 +52,8 @@ require('lazy').setup({
   require 'plugins.autopairs',
   require 'plugins.lualine',
   require 'plugins.dashboard',
+  require 'plugins.illuminate',
+  require 'plugins.refactoring',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
