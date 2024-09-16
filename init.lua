@@ -47,13 +47,12 @@ require('lazy').setup({
   require 'plugins.lint',
   require 'plugins.gitsigns',
   require 'plugins.harpoon',
-  require 'plugins.fugitive',
   require 'plugins.neo-tree',
   require 'plugins.autopairs',
   require 'plugins.lualine',
   require 'plugins.dashboard',
-  require 'plugins.illuminate',
   require 'plugins.refactoring',
+  require 'plugins.lazygit',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
