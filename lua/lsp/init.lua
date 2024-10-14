@@ -100,6 +100,7 @@ return {
 
     local servers = {
       clangd = {},
+      zls = {},
       gopls = {},
       ts_ls = {},
       eslint = {
