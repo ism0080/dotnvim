@@ -53,6 +53,9 @@ require('lazy').setup({
   require 'plugins.dashboard',
   require 'plugins.refactoring',
   require 'plugins.lazygit',
+  require 'plugins.oil',
+  require 'plugins.dressing',
+  require 'plugins.supermaven',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {

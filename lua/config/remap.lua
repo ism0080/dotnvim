@@ -23,10 +23,10 @@ vim.keymap.set('i', '<C-c>', '<Esc>')
 
 vim.keymap.set('n', 'Q', '<nop>')
 
-vim.keymap.set('n', '<C-k>', '<cmd>cnext<CR>zz')
-vim.keymap.set('n', '<C-j>', '<cmd>cprev<CR>zz')
-vim.keymap.set('n', '<leader>k', '<cmd>cnext<CR>zz')
-vim.keymap.set('n', '<leader>j', '<cmd>cprev<CR>zz')
+vim.keymap.set('n', '<C-j>', '<cmd>cnext<CR>zz')
+vim.keymap.set('n', '<C-k>', '<cmd>cprev<CR>zz')
+vim.keymap.set('n', '<leader>j', '<cmd>cnext<CR>zz')
+vim.keymap.set('n', '<leader>k', '<cmd>cprev<CR>zz')
 
 vim.keymap.set('n', '<leader>rw', ':%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>', { desc = '[G]lobal [R]eplace on currently highlighted work' })
 
@@ -40,9 +40,6 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 --  Use CTRL+<hjkl> to switch between windows
 --
 --  See `:help wincmd` for a list of all window commands
-vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
-vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
-vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
-vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
-
 vim.keymap.set('i', '<Tab>', '<C-y>', { noremap = true, silent = true, desc = 'Accept autocomplete' })
+
+vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
